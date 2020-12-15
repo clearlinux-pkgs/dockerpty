@@ -4,7 +4,7 @@
 #
 Name     : dockerpty
 Version  : 0.4.1
-Release  : 10
+Release  : 11
 URL      : https://github.com/d11wtq/dockerpty/archive/v0.4.1.tar.gz
 Source0  : https://github.com/d11wtq/dockerpty/archive/v0.4.1.tar.gz
 Summary  : Python library to use the pseudo-tty of a docker container
