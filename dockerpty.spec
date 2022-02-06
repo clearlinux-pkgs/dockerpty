@@ -4,7 +4,7 @@
 #
 Name     : dockerpty
 Version  : 0.4.1
-Release  : 21
+Release  : 22
 URL      : https://github.com/d11wtq/dockerpty/archive/v0.4.1.tar.gz
 Source0  : https://github.com/d11wtq/dockerpty/archive/v0.4.1.tar.gz
 Summary  : Python library to use the pseudo-tty of a docker container
@@ -13,14 +13,13 @@ License  : Apache-2.0
 Requires: dockerpty-license = %{version}-%{release}
 Requires: dockerpty-python = %{version}-%{release}
 Requires: dockerpty-python3 = %{version}-%{release}
-Requires: six
 BuildRequires : buildreq-distutils3
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : six
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(py)
+BuildRequires : pypi(six)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 # Docker PTY
@@ -64,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635725169
+export SOURCE_DATE_EPOCH=1644186845
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
